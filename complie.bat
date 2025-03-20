@@ -1,0 +1,1 @@
+typst c --root /path/to/the/project  main.typ 

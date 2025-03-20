@@ -1,3 +1,8 @@
+# Resume Typst Template
+从 [resume-ng-typst](https://github.com/fky2015/resume-ng-typst) 项目 fork 而来。下面是resume-ng-typst的README.md内容。
+
+---
+
 # Resume-ng (Typst Version)
 
 A [Typst][typst] resume designed for optimal information density and aesthetic appeal.

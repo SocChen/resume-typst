@@ -1,17 +1,17 @@
-#import "@preview/resume-ng:1.0.0": *
+#import "/lib/lib.typ": *
 
 // Take a look at the file `template.typ` in the file panel
 // to customize this template and discover how it works.
 #show: project.with(
   title: "Resume-ng",
   author: (name: "冯开宇"),
-  contacts: 
-    (
-      "+86 188-888-8888",
-       link("mailto:loveress01@outlook.com", "loveress01@outlook.com"),  
-       link("https://blog.fkynjyq.com", "blog.fkynjyq.com"),
-       link("https://github.com", "github.com/fky2015"),  
-    )
+  contacts: (
+    "+86 188-888-8888",
+    link("mailto:loveress01@outlook.com", "loveress01@outlook.com"),
+    link("https://blog.fkynjyq.com", "blog.fkynjyq.com"),
+    link("https://github.com", "github.com/fky2015"),
+  ),
+  photo: "/template/profile.jpg",
 )
 
 #resume-section("教育经历")
@@ -20,9 +20,9 @@
   degree: "学术型硕士研究生",
   school: "网络空间安全，网络空间安全学院",
   start: "2021-09",
-  end: "2024-06"
+  end: "2024-06",
 )[
-*GPA: 3.62/4.0*，主要研究方向为#strong("拜占庭共识算法")，在分布式系统领域方面有一定的研究和工程经验。*2024年应届生*。
+  *GPA: 3.62/4.0*，主要研究方向为#strong("拜占庭共识算法")，在分布式系统领域方面有一定的研究和工程经验。*2024年应届生*。
 ]
 
 #resume-education(
@@ -30,9 +30,9 @@
   degree: "工学学士",
   school: "计算机科学与技术，计算机学院",
   start: "2017-09",
-  end: "2021-06"
+  end: "2021-06",
 )[
-*GPA: 3.7/4.0(专业前 3\%)*，获学业奖学金多次，全国大学生 XYZ 竞赛二等奖（2次），ZYX 竞赛三等奖。
+  *GPA: 3.7/4.0(专业前 3\%)*，获学业奖学金多次，全国大学生 XYZ 竞赛二等奖（2次），ZYX 竞赛三等奖。
 ]
 
 #resume-section[技术能力]
@@ -47,8 +47,8 @@
   start: "2020.10",
   end: "2021.03",
 )[
-- *独立负责XXX业务后端的设计、开发、测试和部署。*通过 FaaS、Kafka 等平台实现站内信模板渲染服务。向上游提供 SDK 代码，增加或升级了多种离线和在线逻辑。完成了业务对站内信的多样需求。
-- *参与 XXX 的需求分析，系统技术方案设计；完成需求开发、灰度测试、上线和监控。*
+  - *独立负责XXX业务后端的设计、开发、测试和部署。*通过 FaaS、Kafka 等平台实现站内信模板渲染服务。向上游提供 SDK 代码，增加或升级了多种离线和在线逻辑。完成了业务对站内信的多样需求。
+  - *参与 XXX 的需求分析，系统技术方案设计；完成需求开发、灰度测试、上线和监控。*
 ]
 
 #resume-section[项目经历]

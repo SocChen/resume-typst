@@ -2,17 +2,12 @@
 
 // Take a look at the file `template.typ` in the file panel
 // to customize this template and discover how it works.
-#show: project.with(
-  title: "Resume-ng",
-  author: (name: "冯开宇"),
-  contacts: (
-    "+86 188-888-8888",
-    link("mailto:loveress01@outlook.com", "loveress01@outlook.com"),
-    link("https://blog.fkynjyq.com", "blog.fkynjyq.com"),
-    link("https://github.com", "github.com/fky2015"),
-  ),
-  photo: "/template/profile.jpg",
-)
+#show: project.with(title: "Resume-ng", author: (name: "冯开宇"), contacts: (
+  "+86 188-888-8888",
+  link("mailto:loveress01@outlook.com", "loveress01@outlook.com"),
+  link("https://blog.fkynjyq.com", "blog.fkynjyq.com"),
+  link("https://github.com", "github.com/fky2015"),
+), photo: "/template/profile.jpg")
 
 #resume-section("教育经历")
 #resume-education(
@@ -28,7 +23,7 @@
 #resume-education(
   university: "北京理工大学",
   degree: "工学学士",
-  school: "计算机科学与技术，计算机学院",
+  // school: "计算机科学与技术，计算机学院",
   start: "2017-09",
   end: "2021-06",
 )[
@@ -36,7 +31,8 @@
 ]
 
 #resume-section[技术能力]
-- *语言*: 编程不受特定语言限制。常用 Rust, Golang, Python,C++； 熟悉 C, #text(fill: gray, "JavaScript")；了解 Lua, Java, #text(fill: gray, "TypeScript")。
+- *语言*: 编程不受特定语言限制。常用 Rust, Golang, Python,C++； 熟悉 C, #text(fill: gray, "JavaScript")；了解
+  Lua, Java, #text(fill: gray, "TypeScript")。
 - *工作流*: Linux, Shell, (Neo)Vim, Git, GitHub, GitLab.
 - *其他*: 有容器化技术的实践经验，熟悉 Kubernetes 的使用。
 
@@ -47,26 +43,21 @@
   start: "2020.10",
   end: "2021.03",
 )[
-  - *独立负责XXX业务后端的设计、开发、测试和部署。*通过 FaaS、Kafka 等平台实现站内信模板渲染服务。向上游提供 SDK 代码，增加或升级了多种离线和在线逻辑。完成了业务对站内信的多样需求。
+  - *独立负责XXX业务后端的设计、开发、测试和部署。*通过 FaaS、Kafka 等平台实现站内信模板渲染服务。向上游提供 SDK
+    代码，增加或升级了多种离线和在线逻辑。完成了业务对站内信的多样需求。
   - *参与 XXX 的需求分析，系统技术方案设计；完成需求开发、灰度测试、上线和监控。*
 ]
 
 #resume-section[项目经历]
 
-#resume-project(
-  title: "BusTub 基于 C++ 的简易单机数据库",
-  duty: "算法设计与实现 / CMU 15-445 课程",
-)[
+#resume-project(title: "BusTub 基于 C++ 的简易单机数据库", duty: "算法设计与实现 / CMU 15-445 课程")[
   - 实现了基于可扩展哈希表和LRU-K的内存池管理。实现了可并发的B+树，支持乐观加锁的读写操作。
   - 采用火山模型实现了查询、修改、连接、聚合等查询执行器，对部分查询进行了改写与下推。
   - 采用 2PL 进行并发控制，支持死锁处理、多种隔离级别、表锁和行锁。
   - 对数据库系统有了基本的认识和实践。
 ]
 
-#resume-project(
-  title: "Multi-Raft 分布式 KV 存储系统",
-  duty: "算法设计与实现 / MIT 6.824 课程",
-)[
+#resume-project(title: "Multi-Raft 分布式 KV 存储系统", duty: "算法设计与实现 / MIT 6.824 课程")[
   - 实现了 Raft 协议的选举、日志复制、持久化、日志压缩等基本功能。
   - 基于 Raft 协议实现了满足线性一致性的 KV 数据库。
   - 采用 Multi-Raft 架构，支持数据分片，分片迁移，分片垃圾回收和分片迁移时读写优化。
